@@ -24,3 +24,5 @@ def callback(message, channel):
         led.on()
         sleep(5)
         led.off()
+
+pubnub.subscribe( channel, callback = callback)
